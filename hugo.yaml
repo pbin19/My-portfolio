@@ -1,0 +1,346 @@
+# baseURL: "https://hugo-profile.netlify.app"
+# languageCode: "en-us"
+# title: "Hugo Profile"
+# theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+#   main:
+#     - identifier: blog
+#       name: Blog
+#       title: Blog posts
+#       url: /blogs
+#       weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Portfolio"
+  description: My Portfolio
+  # staticPath: ""  # The path to serve the static files from
+  # favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Portfolio" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Krishna Bindu."
+    subtitle: "Tech Enthusiastt"
+    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+    image: /images/Bindu.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/pbin19
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/krishna-bindu-polisetty-a30129232
+
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.png"
+    content: |-
+      I am a software developer with a passion for web development. I have a background in computer science majoring in Cloud computing, and I have a strong interest in the intersection of Web development, UI/UX desiging, AI/ML and Cloud.
+    skills:
+      enable: true
+      title: "Here are a few technologies and tools I've been working with recently:"
+      items:
+        - "C++/Python/Java"      
+        - "MERN"
+        - "UI/UX - FIGMA"
+        - "AI/ML"        
+        - "AWS"
+        - "AZURE"
+        - "GCP"
+        - "GIT/GITHUB"
+        - "MYSQL/FIREBASE"
+        - "REACT - VITE"
+
+
+
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "UI/UX Designer Intern"
+        company: "Vascan Solns"
+        date: "Feb 2024 - June 2024"
+        content: |
+          Led the UI/UX design of a real-time web application called 'Find Me' as the team lead of a 4-member design group. The design was later developed into a full application and selected for a ₹1 million grant.
+          - Led end-to-end design planning and team coordination
+          - Delivered a grant-winning user interface and experience
+
+      - job: "UI/UX Designer Intern"
+        company: "BragTech"
+        date: "Oct 2023 - Nov 2023"
+        content: |
+          Redesigned mobile and web application interfaces for the product "Yourself" to enhance usability and deliver a seamless user experience.
+          - Led UI/UX design for both platforms
+          - Improved layout structure for better accessibility and engagement
+
+      - job: "AWS Intern"
+        company: "APSSDC"
+        date: "June 2023 - Aug 2023"
+        content: |
+          Completed an AWS internship where I gained hands-on experience with core AWS services under expert guidance. Developed and deployed an Employee Database Management web application using Python Flask, PyMySQL, HTML, CSS, and JavaScript on AWS.
+
+          - Built a full-stack web application from scratch.
+          - Deployed the app using AWS services for real-world hosting experience
+
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Bachelor of Science in Computer Science"
+        school:
+          name: "SRM University Andhra Pradesh"
+        date: "2021 - 2025"
+        GPA: "7.81 out of 10.0"
+        content: |
+          - Specaliaztion - Distributed Systems and Cloud Computing.
+      - title: "Intermediate"
+        school:
+          name: "Narayana Junior college"
+        date: "2019 - 2021"
+        GPA: "91.5% out of 100%"
+      - title: "High School"
+        school:
+          name: "Kendriya Vidhyalaya High School."
+        GPA: "91.8% out of 100%"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Pulished a patent
+        content: Published my research work in IEEE Xplore in International conference and later published a Patent on the same(Application no. - 202441103343).
+        url: https://ieeexplore.ieee.org/document/10530763 
+      - title: NAT N4 Certification
+        content: Passed Japanese language test - N4 level.
+        url: https://example.com
+
+      - title: Topper of the exam - Nptel
+        content: Recognized in the top 1% in the "Human-Computer Interface Design and Implementation" course.
+
+      - title: WEB DEVELOPMENT BOOT CAMP
+        content: Completed course in Udemy.
+
+      - title: Google Cloud Career Readiness Certificate 
+        content: Completed the training videos and tasks in the modules given in the assignment.
+
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: VIDEO LIBRARY WEB APP
+        content: A video library built with the MERN stack provides organized video content with browsing, searching, and playback features, ensuring easy access for entertainment or education.
+        image: /images/projects/profile.png
+        featured:
+          name: Demo
+          link: C
+        badges:
+          - "React - Vite"
+          - "Tailwind CSS"
+          - "Firebase"
+        links:
+          # - icon: fa fa-envelope
+          #   url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: #
+          # - icon: fab fa-twitter
+          #   url: #
+
+      - title: FYP - Credit Card Fraud Detection
+        content: An ensemble model combining multiple deep learning models processes transaction data to extract fraudulent patterns, achieving high precision and recall.
+        image: /images/projects/profile2.jpg
+        # featured:
+        #   name: Demo5
+        #   link: #
+        badges:
+          - "Python & it's Libraries"
+          - "Matplotlib"
+          - "Seaborn"          
+        # links:
+        #   - icon: fab fa-github
+        #     url: #
+
+      - title: Chatting Application using Java
+        content: A messaging app with an intuitive UI featuring real-time messaging, multimedia sharing, group chat.
+        image: /images/projects/converter.jpg
+        # featured:
+        #   name: Demo V2
+        #   link: #
+        badges:
+          - "Java"
+          - "AWT"
+          - "Swing"
+        # links:
+        #   - icon: fab fa-github
+        #     url: #
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Feel free to reach out via email.
+    btnName: Mail
+    btnLink: mailto:krishnabindupolisetty@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+
+
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
